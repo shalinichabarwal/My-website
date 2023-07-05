@@ -27,27 +27,26 @@
         top: 0;
         left: 0;
         right: 0;
-        width: 100vp;
+        width: 100%;
       }
       .image {
         border-radius: 50%;
         position: absolute;
-        top: 90px;
-        left: 100px;
-        float: left;
+        top: 300px;
+        left: 40%;
         border: 5px solid #f2d7d9;
       }
       h1 {
-        margin-left: 450px;
+        text-align: center;
         color: #a20ba7;
         margin-bottom: 0px;
         font-size: 3rem;
         font-family: "Times New Roman", Times, serif;
-        margin-top: 30px;
+        margin-top: 130px;
       }
       p {
         margin-left: 100px;
-        margin-top: 80px;
+        margin-top: 47px;
         font-size: 30px;
         color: #743d81;
         font-family: "Sacramento", cursive;
@@ -159,6 +158,7 @@
       @media(max-width:425px){
         .card{
           margin-left: 0px;
+          
         }
         
       }
@@ -168,17 +168,42 @@
         }
       }
       @media(max-width:720px){
+        
+        h1{
+          margin-top: 80px;
+        }
+        
+        p{
+            margin-left: 30px;
+        }
+      }
+      @media(min-width:500px) and (max-width:740px) {
         .image{
             height: 200px;
             width: 200px;
-            top: 60px ;
-            left: 30px;
+            top: 350px ;
+            left: 37%;
+            
+        }
+      }
+      @media(min-width:380px) and (max-width:500px){
+        .image{
+          height: 200px;
+            width: 200px;
+            top: 350px ;
+            left: 30%;
+        }
+      }
+      @media(max-width:380px){
+        .image{
+          height: 200px;
+            width: 200px;
+            top: 350px ;
+            left:50px
         }
         h1{
-            margin-left: 20px;
-        }
-        p{
-            margin-left: 30px;
+          text-align: left;
+          margin-left: 50px;
         }
       }
     </style>
@@ -191,11 +216,9 @@
           src="./My website/bg2.PNG"
           alt="background image"
           width="100%"
-          height="250"
+          height="500"
         />
-        <div>
-          <h1>Shalini Chabarwal</h1>
-          <hr />
+        <div>          
           <img
             class="image"
             src="./My website/photo.PNG"
@@ -204,6 +227,7 @@
             width="300"
           />
         </div>
+        <h1>Shalini Chabarwal</h1>
       </div>
       <p>
         Hi! Myself Shalini , I am currently pursuing graduation in BTech
@@ -283,6 +307,7 @@
             drive.
           </li>
         </ul>
+      </div>
       </div>
       <div class="projects">
         <h2 class="title">My Projects</h2>
@@ -423,6 +448,6 @@
           </footer>
         </div>
       </div>
-    </div>
+    
   </body>
 </html>
